@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #34495e;
+  --background-color: #f5f6fa;
+  --secondary-color: #1cc88a;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
+  --accent-color: #36b9cc; /* mau nhan manh */
+  --text-color: #333333;
+  --link-color: #007bff;
+  --card-color: #ffffff;
+  --font-size: 16px; /* Kích thước chữ */
+  --spacing: 10px; /* Khoảng cách */
+}
+
+
+/* 
+
+@media (max-width : 476px ){
+  #header-left {
+    width: 100%;
+    margin-left: 30px;
+  }
+  #header-right {
+    width: 100%;
+    margin-left: 60px;
+  }
+}

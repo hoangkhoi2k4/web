@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #34495e;
+  --background-color: #f5f6fa;
+  --secondary-color: #1cc88a;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
+  --accent-color: #36b9cc; /* mau nhan manh */
+  --text-color: #333333;
+  --link-color: #007bff;
+  /* --card-color: #ffffff; */
+  --font-size: 16px; /* Kích thước chữ */
+  --spacing: 10px; /* Khoảng cách */
+}
+
+#navbar {
+  height: 200vh !important;
+  background-color: var(--primary-color) !important;
+  flex-direction: column;
+  position: fixed; /* Fixed position */
+  left: 0;
+
+  a {
+    color: var(--background-color); 
+    text-decoration: none; 
+  }
+
+  .active {
+    color: #1cc88a;
+  }
+
+  a:active {
+    color: #003366; 
+  }
+}
+
+#navbar #navbar_body .list-group-item {
+  color: var(--card-color);
+}
+
+#navbar #navbar_body .list-group-item {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+#navbar .list-group-item:hover {
+  background-color: #3498db !important;
+  transform: scale(1.02); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  /* color: #333333 !important; */
+}
+
+#navbar .list-group-item span {
+  font-size: 17px;
+}

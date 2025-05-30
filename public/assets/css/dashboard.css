@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #5bc0de;
+    --background-color: #f5f6fa;
+    --secondary-color:#1cc88a;
+    --warning-color :#f6c23e;
+    --danger-color:#e74a3b;
+    --accent-color:#36b9cc;   /* mau nhan manh */
+    --text-color:#333333;
+    --link-color:#007bff;
+    --card-color:#ffffff;
+    --font-size: 16px;          /* Kích thước chữ */
+    --spacing: 10px;            /* Khoảng cách */
+}
+
+body{ 
+    background-color: #f5f6fa;
+    color: var(--text-color);
+}
+
+
+#statictis-supplier{
+
+    .card-custom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .card-custom i {
+        font-size: 30px;
+    }
+    
+    .card-blue {
+        background-color: var(--primary-color);
+        color: white;
+    }
+    
+    .card-red {
+        background-color: var(--danger-color);
+        color: white;
+    }
+    
+    .card-yellow {
+        background-color: var(--warning-color);
+        color: white;
+    }
+    
+    .card-green {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+    
+    .card-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .card-subtitle {
+        font-size: 14px;
+    }
+    
+    .card-number {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .card-custom:hover {
+        transform: translateY(-5px); /* Di chuyển thẻ lên khi hover */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Thêm bóng đổ khi hover */
+        opacity: 0.95;
+    }
+    .card-custom {
+       transition: transform 0.3s ease, background-color 0.3s ease; 
+    }
+    
+}
+
+/* Table styling */
+.table th, .table td {
+    text-align: center;
+     
+}
+
+/* Chart */
+.chart-container {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+/* .chart-container canvas {
+    width: 100%;
+    height: 350px;
+} */
+
+
+#chart .card {
+    
+    background-color: var(--background-color);
+    border: none;
+}
