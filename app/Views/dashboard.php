@@ -56,60 +56,60 @@
                     <div id="navbar_body">
                         <ul class="list-group">
                             <div class="group ">
+
                                 <li class="list-group-item">
                                     <span class="me-3"><i class="fa-regular fa-circle-user"></i></span>
                                     <span>Menu</span>
                                 </li>
 
                                 <li class="list-group-item">
-                                    <a href="dashboard.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=dashboard" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-house"></i></span>
                                         <span>Bảng điều khiển</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="/public/index.php?page=supplier" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=supplier" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-truck"></i></span>
                                         <span>Nhà cung cấp</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="contract.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=contract" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-file-contract"></i></span>
                                         <span>Hợp đồng</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="transaction-history.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=transaction-history" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-clock"></i></span>
                                         <span>Lịch sử giao dịch</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="progress-evaluation.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=progress-evaluation" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-star"></i></span>
                                         <span>Đánh giá tiến độ</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="report.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=report" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-chart-column"></i></span>
                                         <span>Báo cáo</span>
                                     </a>
                                 </li>
-                                <!-- nut cuoi -->
                                 <li class="list-group-item">
-                                    <a href="send-notification.html" class="d-flex align-items-center"
-                                        onclick="setActive(this)">
+                                    <a href="index.php?page=send-notification" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-bell"></i></span>
                                         <span>Gửi thông báo</span>
                                     </a>
                                 </li>
+                               
                                 <li class="list-group-item">
-                                    <a href="login.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=login" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-right-from-bracket"></i></span>
                                         <span>Đăng xuất</span>
                                     </a>
@@ -204,7 +204,7 @@
                     <!-- Top suppliers -->
                     <div id="top-suppliers">
                         <div class="container mt-4">
-                            <h3>Top 5 nhà cung cấp uy tín</h3>
+                            <h3>Top nhà cung cấp uy tín</h3>
                             <!-- table-info table-striped table-hover -->
                             <table class="mb-3 mt-4">
                                 <thead>
@@ -233,42 +233,11 @@
                         </div>
                     </div>
 
-                    <!-- chart -->
-                    <div id="chart" style="width: 100%;">
-                        <!-- top list project-->
-                        <div id="top-project" class="mt-5 ms-2 mb-2 card">
-                            <div class="container">
-                                <h3 class="mt-2 mb-4" style="margin-left: 30%;">Dự án sắp hoàn thành</h3>
-                                <div class="chart-container">
-                                    <div class="container">
-                                        <canvas id="myTopChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- top bad list project-->
-                        <div id="top-project" class="mt-1 ms-2 p-2 card">
-                            <div class="container">
-                                <h3 class="mt-2 mb-4" style="margin-left: 30%;">Dự án chậm tiến độ</h3>
-                                <div class="chart-container">
-                                    <div class="container">
-                                        <canvas id="myBadChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     
                 </div>
             </div>
         </div>
-
-        <!-- Chart.js library for charts -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="../../public/assets/js/main.js"></script>
-        <script src="../../public/assets/js/dashboard.js"></script>
 
 </body>
 

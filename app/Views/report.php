@@ -156,55 +156,62 @@
                 <div id="navbar" style="overflow: hidden;">
                     <div id="navbar_body">
                         <ul class="list-group">
-                            <div class="group">
+                            <div class="group ">
+
                                 <li class="list-group-item">
                                     <span class="me-3"><i class="fa-regular fa-circle-user"></i></span>
                                     <span>Menu</span>
                                 </li>
+
                                 <li class="list-group-item">
-                                    <a href="dashboard.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=dashboard" class="d-flex align-items-center"
+                                        onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-house"></i></span>
                                         <span>Bảng điều khiển</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="supplier.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=supplier" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-truck"></i></span>
                                         <span>Nhà cung cấp</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="contract.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=contract" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-file-contract"></i></span>
                                         <span>Hợp đồng</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="transaction-history.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=transaction-history" class="d-flex align-items-center"
+                                        onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-clock"></i></span>
                                         <span>Lịch sử giao dịch</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="progress-evaluation.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=progress-evaluation" class="d-flex align-items-center"
+                                        onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-star"></i></span>
                                         <span>Đánh giá tiến độ</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="report.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=report" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-chart-column"></i></span>
                                         <span>Báo cáo</span>
                                     </a>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="send-notification.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                
+                                 <li class="list-group-item">
+                                    <a href="index.php?page=send-notification" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-bell"></i></span>
                                         <span>Gửi thông báo</span>
                                     </a>
                                 </li>
+                              
                                 <li class="list-group-item">
-                                    <a href="login.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=login" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-right-from-bracket"></i></span>
                                         <span>Đăng xuất</span>
                                     </a>
@@ -219,20 +226,7 @@
                 <!-- content -->
                 <div class="container">
                     <h2 style="text-align: center;" class="fw-bold">XẾP HẠNG NHÀ CUNG CẤP</h2>
-                    <div class="d-inline-flex align-items-center justify-content-around mb-3">
-                        <div class="me-4">
-                            <select id="timeFilter">
-                                <option value="all">Tất cả</option>
-                                <option value="week1">Tuần 1</option>
-                                <option value="week2">Tuần 2</option>
-                                <option value="month1">Tháng 1</option>
-                                <option value="month2">Tháng 2</option>
-                            </select>
-                        </div>
-                        <div class="ms-2">
-                            <div class="btn btn-md btn-warning" onclick="exportCSV()">Export CSV</div>
-                        </div>
-                    </div>
+                    
                     
                     <table id="rankingTable">
                         <thead>

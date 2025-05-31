@@ -77,54 +77,53 @@
                                 </li>
 
                                 <li class="list-group-item">
-                                    <a href="dashboard.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=dashboard" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-house"></i></span>
                                         <span>Bảng điều khiển</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="supplier.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=supplier" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-truck"></i></span>
                                         <span>Nhà cung cấp</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="contract.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=contract" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-file-contract"></i></span>
                                         <span>Hợp đồng</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="transaction-history.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=transaction-history" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-clock"></i></span>
                                         <span>Lịch sử giao dịch</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="progress-evaluation.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=progress-evaluation" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-star"></i></span>
                                         <span>Đánh giá tiến độ</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="report.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=report" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-chart-column"></i></span>
                                         <span>Báo cáo</span>
                                     </a>
                                 </li>
-                                <!-- nut cuoi -->
-                                <li class="list-group-item">
-                                    <a href="send-notification.html" class="d-flex align-items-center"
-                                        onclick="setActive(this)">
+                                 <li class="list-group-item">
+                                    <a href="index.php?page=send-notification" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-bell"></i></span>
                                         <span>Gửi thông báo</span>
                                     </a>
                                 </li>
+                                
                                 <li class="list-group-item">
-                                    <a href="login.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=login" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-right-from-bracket"></i></span>
                                         <span>Đăng xuất</span>
                                     </a>
@@ -178,62 +177,17 @@
 
                                 <div class="col-md-4 col-sm-6">
                                     <div class="input-group">
-                                        <input type="text" class="form-control"
-                                            placeholder="Tìm kiếm theo tên hoặc mã hợp đồng">
-                                        <button class="btn btn-outline-primary" type="submit">Tìm kiếm</button>
+                                        <input type="text" id="searchInput" class="form-control"
+                                            placeholder="Tìm kiếm theo tên hợp đồng">
+                                        <button class="btn btn-outline-primary" id="searchBtn" type="submit">Tìm kiếm</button>
                                     </div>
                                 </div>
 
-                                <div class="col-auto ms-auto">
-                                    <button class="btn btn-warning">
-                                        <i class="bi bi-download me-2"></i>Xuất CSV
-                                    </button>
-                                </div>
+                                
                             </div>
                         </div>
 
-                        <!-- Filter Panel -->
-                        <div class="container-fluid py-3 bg-white">
-                            <div class="row g-3 align-items-center">
-                                <div class="col-md-3 col-sm-6">
-                                    <select class="form-select" aria-label="Lọc theo loại dịch vụ">
-                                        <option selected>Chọn nhà cung cấp</option>
-                                        <option>Supplier A</option>
-                                        <option>Supplier B</option>
-                                        <option>Supplier C</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-2 col-sm-6">
-                                    <select class="form-select">
-                                        <option selected disabled>Chọn trạng thái</option>
-                                        <option>Đang hoạt động</option>
-                                        <option>Sắp hết hạn</option>
-                                        <option>Hết hạn</option>
-                                        <option>Đã hủy</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-text">
-                                            <i class="bi bi-calendar"></i>
-                                        </span>
-                                        <input type="text" class="form-control" id="fromDate" placeholder="Từ ngày">
-                                        <input type="text" class="form-control" id="toDate" placeholder="Đến ngày">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <button class="btn btn-primary me-2 col-md-5 col-12">
-                                        <i class="bi bi-funnel me-2 "></i>
-                                        Áp dụng lọc
-                                    </button>
-                                    <button class="btn btn-outline-secondary col-md-5 col-12">
-                                        <i class="bi bi-x-circle me-2 "></i>
-                                        Xóa bộ lọc
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
+                        
                         <!-- Modal: Add New Contract -->
                         <div class="modal fade" id="addContractModal" tabindex="-1"
                             aria-labelledby="addContractModalLabel" aria-hidden="true">
@@ -296,7 +250,7 @@
                     </div>
 
                     <!-- list contract -->
-                    <div id="list-contracts">
+                    <div id="contract-list">
                         <div class="container table-container">
                             <h3 class="mt-4 mb-4">Danh Sách Hợp Đồng</h3>
                             <table class="mb-3 overflow-auto">
@@ -561,6 +515,61 @@
         flatpickr("#toDate", {
             dateFormat: "d/m/Y",
             allowInput: true
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#searchInput').on('input', function() {
+            var keyword = $(this).val().trim();
+            $.post('index.php?page=contract&action=contract-search', { q: keyword }, function(html) {
+                $('tbody#contract-list').html(html);
+                bindContractModalEvents && bindContractModalEvents();
+            });
+        });
+
+        function bindContractModalEvents() {
+            // Sửa hợp đồng
+            $('.edit-btn').off('click').on('click', function () {
+                const btn = this;
+                const modal = document.getElementById('updateContractModal');
+                modal.querySelector('input[name="id"]').value = btn.dataset.id;
+                modal.querySelector('input[name="name"]').value = btn.dataset.name || '';
+                modal.querySelector('input[name="service_id"]').value = btn.dataset.service || '';
+                modal.querySelector('input[name="provider_id"]').value = btn.dataset.provider || '';
+                modal.querySelector('input[name="price"]').value = btn.dataset.price || '';
+                modal.querySelector('input[name="unit"]').value = btn.dataset.unit || '';
+                modal.querySelector('input[name="signed_date"]').value = btn.dataset.signed || '';
+                modal.querySelector('input[name="expire_date"]').value = btn.dataset.expire || '';
+                modal.querySelector('input[name="name_supplier"]').value = btn.dataset.supplier || '';
+                modal.querySelector('input[name="phone_supplier"]').value = btn.dataset.phone || '';
+            });
+
+            // Xóa hợp đồng
+            $('.delete-btn').off('click').on('click', function () {
+                document.getElementById('deleteId').value = this.dataset.id;
+                document.getElementById('deleteName').textContent = this.dataset.name;
+            });
+
+            // Xem chi tiết hợp đồng
+            $('.view-btn').off('click').on('click', function () {
+                let btn = this;
+                let html = `
+                    <p><strong>Tên hợp đồng:</strong> ${btn.dataset.name || ''}</p>
+                    <p><strong>Nhà cung cấp:</strong> ${btn.dataset.supplier || ''}</p>
+                    <p><strong>Loại dịch vụ:</strong> ${btn.dataset.service || ''}</p>
+                    <p><strong>Giá trị:</strong> ${btn.dataset.price || ''}</p>
+                    <p><strong>Đơn vị:</strong> ${btn.dataset.unit || ''}</p>
+                    <p><strong>Ngày bắt đầu:</strong> ${btn.dataset.signed || ''}</p>
+                    <p><strong>Ngày kết thúc:</strong> ${btn.dataset.expire || ''}</p>
+                    <p><strong>SĐT NCC:</strong> ${btn.dataset.phone || ''}</p>
+                `;
+                document.getElementById('viewContractModalBody').innerHTML = html;
+            });
+        }
+
+        // Gắn sự kiện lần đầu khi trang load
+        $(document).ready(function() {
+            bindContractModalEvents();
         });
     </script>
 </body>

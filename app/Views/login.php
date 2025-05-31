@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,8 +32,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h2 {
@@ -101,7 +109,7 @@
         }
 
         .forgot-password a:hover {
-            text W-decoration: underline;
+            text-decoration: underline;
         }
 
         @media (max-width: 480px) {
@@ -112,6 +120,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="login-container">
         <h2>Đăng Nhập</h2>
@@ -135,7 +144,7 @@
         function handleLogin() {
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            
+
             // if (username && password) {
             //     alert('Đang xử lý đăng nhập cho ' + username);
             //     // Thêm logic đăng nhập thực tế tại đây (gọi API, v.v.)
@@ -144,8 +153,9 @@
             // }
             window.location.href = "dashboard.html";
 
-            
+
         }
     </script>
 </body>
+
 </html>

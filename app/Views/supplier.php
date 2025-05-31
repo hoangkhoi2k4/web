@@ -82,60 +82,61 @@
                     <div id="navbar_body">
                         <ul class="list-group">
                             <div class="group ">
+
                                 <li class="list-group-item">
                                     <span class="me-3"><i class="fa-regular fa-circle-user"></i></span>
                                     <span>Menu</span>
                                 </li>
 
                                 <li class="list-group-item">
-                                    <a href="dashboard.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=dashboard" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-house"></i></span>
                                         <span>Bảng điều khiển</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="supplier.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=supplier" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-truck"></i></span>
                                         <span>Nhà cung cấp</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="contract.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=contract" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-file-contract"></i></span>
                                         <span>Hợp đồng</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="transaction-history.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=transaction-history" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-clock"></i></span>
                                         <span>Lịch sử giao dịch</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="progress-evaluation.html" class="d-flex align-items-center"
+                                    <a href="index.php?page=progress-evaluation" class="d-flex align-items-center"
                                         onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-star"></i></span>
                                         <span>Đánh giá tiến độ</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="report.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=report" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-chart-column"></i></span>
                                         <span>Báo cáo</span>
                                     </a>
                                 </li>
-                                <!-- nut cuoi -->
-                                <li class="list-group-item">
-                                    <a href="send-notification.html" class="d-flex align-items-center"
-                                        onclick="setActive(this)">
+
+                                 <li class="list-group-item">
+                                    <a href="index.php?page=send-notification" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-bell"></i></span>
                                         <span>Gửi thông báo</span>
                                     </a>
                                 </li>
+                                
                                 <li class="list-group-item">
-                                    <a href="login.html" class="d-flex align-items-center" onclick="setActive(this)">
+                                    <a href="index.php?page=login" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-right-from-bracket"></i></span>
                                         <span>Đăng xuất</span>
                                     </a>
@@ -178,27 +179,7 @@
                     <div class="container-fluid bg-light py-3 border-bottom">
                         <div id="search-filter">
                             <div class="row mt-4"> 
-                                     
-                                <div class="col-md-6 d-flex align-items-center">
-                                    <div class="col-md-4 col-sm-6 w-100">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control"
-                                                placeholder="Tìm kiếm theo tên hoặc mã hợp đồng">
-                                            <button class="btn btn-outline-primary" type="submit">Tìm kiếm</button>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div class="col-md-6 d-flex justify-content-between align-items-center">
-                                    <div class="col-6 col-md-4 me-md-0 me-4">
-                                        <select class="form-select" aria-label="Lọc theo loại dịch vụ">
-                                            <option selected>Lọc theo loại dịch vụ</option>
-                                            <option value="ve sinh">Vệ sinh</option>
-                                            <option value="dien">Điện</option>
-                                            <option value="bao tri">Bảo trì</option>
-                                        </select>
-                                    </div>
-
                                     <div class="col-6 col-md-3 me-3">
                                         <button class="btn btn-md btn-success w-75" data-bs-toggle="modal"
                                             data-bs-target="#supplierModal">

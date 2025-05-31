@@ -109,4 +109,18 @@ class Contract {
         $stmt->bind_param("i", $id);
         return $stmt->execute();
     }
+
+    public function searchByName($keyword) {
+        $sql = "SELECT * FROM contract WHERE name LIKE ? ORDER BY id DESC";
+        $stmt = $this->conn->prepare($sql);
+        $like = '%' . $keyword . '%';
+        $stmt->bind_param("s", $like);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $contracts = [];
+        while ($row = $result->fetch_assoc()) {
+            $contracts[] = $row;
+        }
+        return $contracts;
+    }
 }

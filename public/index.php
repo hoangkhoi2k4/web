@@ -61,6 +61,9 @@ switch ($page) {
             case 'delete':
                 $controller->delete();
                 break;
+            case 'contract-search':
+                $controller->searchAjax();
+                break;
             default:
                 $controller->index();
         }
@@ -93,7 +96,12 @@ switch ($page) {
     case 'send-notification':
         require_once CONTROLLERS_PATH . 'AdminController.php';
         $controller = new AdminController();
-        $controller->sendNotification();
+        $action = $_GET['action'] ?? '';
+        if ($action === 'sendMail') {
+            $controller->sendMail();
+        } else {
+            $controller->sendNotification();
+        }
         break;
     case 'transaction-history':
         require_once CONTROLLERS_PATH . 'BillController.php';
