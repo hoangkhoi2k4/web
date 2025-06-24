@@ -95,19 +95,14 @@
                                         <span>Đánh giá tiến độ</span>
                                     </a>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="index.php?page=report" class="d-flex align-items-center" onclick="setActive(this)">
-                                        <span class="me-2"><i class="fa-solid fa-chart-column"></i></span>
-                                        <span>Báo cáo</span>
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
+                                
+                                 <li class="list-group-item">
                                     <a href="index.php?page=send-notification" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-bell"></i></span>
                                         <span>Gửi thông báo</span>
                                     </a>
                                 </li>
-                               
+                                
                                 <li class="list-group-item">
                                     <a href="index.php?page=login" class="d-flex align-items-center" onclick="setActive(this)">
                                         <span class="me-2"><i class="fa-solid fa-right-from-bracket"></i></span>
